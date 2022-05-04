@@ -1,0 +1,135 @@
+<!doctype html> <!-- Teste, testando-->
+<html>
+
+    <head>
+        <!-- Metadados -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Adcionando o CSS -->
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+
+        <!-- Cabecalho (titulo page) -->
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+<!-- meu teste-->
+
+<header class="cabecalho">
+    <img class="cabecalho-imagem" src="logo.png" alt="Developer Heredia">
+    <nav class="cabecalho-menu">
+      <a class="cabecalho-menu-item" href="https://discord.gg/Fw4AHwEE5M">Discord</a>
+      <a class="cabecalho-menu-item" href="https://www.instagram.com/devheredia/?hl=pt-br">Instagram</a>
+      <a class="cabecalho-menu-item" href="https://www.linkedin.com/in/vin%C3%ADcius-her%C3%A9dia-1a6088233/">Linkedin</a>
+      <a class="cabecalho-menu-item" href= "https://github.com/devheredia">GitHub</a>
+      
+    </nav>
+  </header>
+  
+  
+  <main class="conteudo"></main>
+
+
+        <!-- Cabeçalho -->
+        <div>
+            <h1 id="titulo">Registre seu Pet</h1>
+            <p id="subtitulo">Complete suas informações</p>
+            <br>
+        </div>
+
+        <!-- aqui vamo cria o formulario em si -->
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Para separar os campos (um agrupador de campos) -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome Do Pet</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="sobrenome"><strong>Raça do Pet</strong></label> <!--aqui fica a explicacao do campo-->
+                    <input type="text" name="sobrenome" id="sobrenome" required> <!-- com o input podemos dar entrada a valores-->
+                </div>
+            </fieldset> 
+
+            <!-- A propriedade desse input esta diferente pois aqui sera o local pro email, que obriga o usuario a por o @ -->
+            <fieldset class="grupo">
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label for="nome"><strong>Nome Do Dono</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            </fieldset>
+            
+
+            <!-- botao de escolhas, tipo genero, local e etc-->
+            <div class="campo">
+                <label><strong>Qual o seu pet?</strong></label>
+                <label>
+                    <input type="radio" name="animal" value="cachorro" checked> Cachorro
+                </label>
+                <label>
+                    <input type="radio" name="animal" value="gato"> Gato
+                </label>
+                <label>
+                    <input type="radio" name="animal" value="passaro"> Pássaro
+                </label>
+            </div>
+
+            <!-- Lista de  opcoes -->
+            <div class="campo">
+                <label for="cor"><strong>Cor</strong></label>
+                <select id="cor" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Branco</option>
+                  <option>Preto</option>
+                  <option>Castanho</option>
+                  <option>Amarelo</option>
+                  <option>Ruivo</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <!-- Quadradinho de selecoes a famosa box de selecao -->
+                <div id="check">
+                    <label><strong>Selecione as opções que se encaixa com seu pet</strong></label><br><br>
+                    <input type="checkbox" id="opcao1" name="opcao1" value="maior de 2 anos">
+                    <label for="tecnologia1"> Maior de 2 anos</label>
+                    <input type="checkbox" id="opcao2"" name="opcao2" value="foi adotado">
+                    <label for="tecnologia2"> Foi adotado</label>
+                    <input type="checkbox" id="opcao3" name="opcao3" value="tomou vacina da raiva em 2022">
+                    <label for="tecnologia3"> Tomou vacina da raiva em 2022</label>
+                    <input type="checkbox" id="opcao4" name="opcao4" value="tomou as demais vacinas">
+                    <label for="tecnologia4"> Tomou as demais vacina em 2022</label>
+                    <input type="checkbox" id="opcao5" name="opcao5" value="Possui Carteirinha">
+                    <label for="tecnologia4"> Possui carteirinha</label>
+                    <input type="checkbox" id="opcao6" name="opcao6" value="E castrado">
+                    <label for="tecnologia4"> É castrado</label>               
+               
+               
+                </div>
+            </fieldset>
+
+            <!-- Caixa de texto de Descricao -->
+            <div class="campo">
+                <br>
+                <label for="experiencia"><strong>Informe mais sobre o pet </strong></label>
+                <textarea rows="6" style="width: 26em" id="informepet" name="informepet"></textarea>
+            </div>
+
+            <!-- Botão para enviar o formulário -->
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+
+        
+    </body>
+
+</html>
