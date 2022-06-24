@@ -103,7 +103,7 @@ fieldset.grupo .campo {
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     position: absolute;
-    top: 140%;
+    top: 150%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -171,13 +171,26 @@ fieldset.grupo .campo {
 
 .conteudo {
     margin-bottom: 78px;
+}
+    @media screen and (max-width: 720px) {
+        main.cards {
+            flex-direction: column;
+        }
     
+        main.cards section.card {
+            margin-left: 0;
+            margin-bottom: 32px;
+        }
     
+        main.cards section.card:last-child {
+            margin-bottom: 0;
+        }
+    
+        main.cards section.card button {
+            font-size: 70%;
+        }
     
 }
-
-
-
 
 
 
